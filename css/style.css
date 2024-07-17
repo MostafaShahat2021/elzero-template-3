@@ -2,6 +2,8 @@
 :root {
   --main-color: #2196f3;
   --main-color-alt: #1787e0;
+  --header-height:73.6px;
+  --main-transition: 0.3s;
 }
 
 html {
@@ -22,6 +24,10 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
@@ -51,3 +57,43 @@ ul {
   }
 }
 /* Global Rules  */
+
+/* Header Section  */
+.header {
+  position: relative;
+  background-color: white;
+  box-shadow: 0 0 10px #ddd;
+}
+
+.header .container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header .logo{
+  color: var(--main-color);
+  font-size: 26px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--header-height);
+}
+
+.header .main-nav{
+  display: flex;
+}
+.header .main-nav > li > a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--header-height);
+  padding: 0 30px;
+  color: black;
+  transition: var(--main-transition);
+}
+/* Header Section  */
